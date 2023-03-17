@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Laboratorio01</string>
+    <string name="welcome">BIENVENIDO A</string>
+    <string name="progra">PROGRAMACION DE DISPOSITIVOS MOVILES</string>
 </resources>

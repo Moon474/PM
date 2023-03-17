@@ -8,16 +8,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:textSize="@dimen/text_size"
         style="@style/TextAppearance.AppCompat.Caption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BIENVENIDO A "
+        android:text="@string/welcome"
         android:gravity="center"
         android:textAllCaps="true"
         android:layout_gravity="center_horizontal"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textStyle="italic"
-        android:textSize="30dp"/>
+
+        android:fontFamily="serif-monospace"
+        />
 
     <ImageView
         android:layout_width="match_parent"
@@ -28,16 +29,15 @@
         />
 
     <TextView
-        android:id="@+id/display_greeting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="PROGRAMACION DE DISPOSITIVOS MOVILES"
+        android:text="@string/progra"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textStyle="italic"
-        android:textSize="30dp"/>
+        android:fontFamily="serif-monospace"
+
+        android:textSize="@dimen/text_size"/>
 
 
 
