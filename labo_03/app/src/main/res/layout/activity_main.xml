@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:padding="@dimen/gap"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="268dp"
+        android:layout_height="172dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+             />
+
+        <TextView
+
+
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:id="@+id/cant"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout        app:layout_constraintVertical_chainStyle="packed"
+
+
+        android:id="@+id/five_cents"
+        android:layout_width="@dimen/contain"
+        android:layout_marginTop="@dimen/gap_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/quater"
+        app:layout_constraintEnd_toStartOf="@+id/ten_cents"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseCompoundDrawables"
+        android:layout_height="@dimen/contain"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fiveImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icons"
+            app:srcCompat="@drawable/five_cents" />
+
+        <TextView
+            android:id="@+id/fiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five_valor"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintVertical_chainStyle="packed"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dollar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/five_cents"
+        android:id="@+id/ten_cents"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/gap_2"
+
+        app:layout_constraintTop_toTopOf="parent"
+      >
+
+        <ImageView
+            android:id="@+id/ten_image"
+
+            app:srcCompat="@drawable/ten_cents"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icons"
+            android:contentDescription="@string/ten_valor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/tenText"
+
+            android:text="@string/ten_valor"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/quater"
+        android:layout_height="@dimen/contain"
+        android:layout_marginTop="@dimen/h_gap"
+        android:gravity="center"
+        android:layout_width="@dimen/contain"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/five_cents"
+        app:layout_constraintEnd_toStartOf="@+id/dollar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icons"
+            android:contentDescription="@string/quater_valor"
+            android:id="@+id/quarterImage"
+
+            app:srcCompat="@drawable/quarter" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="@string/quater_valor"
+            android:id="@+id/quarterText"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/contain"
+        android:gravity="center"
+        android:layout_height="@dimen/contain"
+        android:layout_marginTop="@dimen/h_gap"
+        android:orientation="vertical"
+        android:id="@+id/dollar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quater"
+        app:layout_constraintTop_toBottomOf="@+id/ten_cents"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/dollarImage"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icons"
+            android:contentDescription="@string/one_valor"
+            app:srcCompat="@drawable/one_dollar" />
+
+        <TextView
+            android:id="@+id/dollarText"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one_valor"
+             />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
