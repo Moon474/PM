@@ -6,7 +6,7 @@ PROGRAMACION DE DISPOSITIVOS MOVILES
  funcionalidad. Tienes que hacer que sea posible compartir dicha
  información con distintas aplicaciones.
 
- 2. Menciona los tipos de intents que existen y un ejemplo de cada
+ # 2. Menciona los tipos de intents que existen y un ejemplo de cada
  uno
  _____________________________________________________________________
  los tipos de intent que existen son implícito y explícito un ejemplo de intent implícito es cuando se visualiza un mapa en una aplicación para compartir ubicación actual o se quiere compartir un archivo .
