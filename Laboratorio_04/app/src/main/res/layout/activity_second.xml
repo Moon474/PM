@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/confirmation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/confirmation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/secondtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/aname"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="185dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="Correo electrónico"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="185dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="Número de teléfono"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/number_text"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="Confirma tu información"
+        android:textColor="@color/black"
+        android:textSize="@dimen/secondtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ShareB"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="100dp"
+        android:text="Compartir"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/confirmation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/secondtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
