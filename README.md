@@ -18,3 +18,19 @@ Un intento explícito es cuando dentro de la misma aplicación se pasa a diferen
  la vista
 Se inicializan las variables y se crea la vista cuando se ejecuta onCreate(). Es decir es donde inicia la lógica de arranque de la aplicación. Esta acción se realiza una única vez
 
+
+
+
+# LABORATORIO 05 ¿Qué diferencia existe entre navegar dentro de la aplicación utilizando
+Navigation Component o hacer uso de intents
+
+Con los intent se hace uso de la función para solicitar información y comunicarla entre los componentes de la aplicación. Es decir existe un intercambio. Mientras que al usar Navigation component se define la navegación que la aplicación tendrá. 
+
+
+Menciona los componentes fundamentales de Navigation
+Component
+
+Navigation Graph, NavHost y NavController
+
+. Mencione algunas de las ventajas del Navigation Graph
+Usar este componente simplifica implementar la navegacion y ayuda a visualizarla. Tambien ofrece beneficios relacionados a la biblioteca.
