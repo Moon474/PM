@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
             intent.putExtra("name", namei)
             intent.putExtra("email", emaili)
-            intent.putExtra("phone", numberi)
+            intent.putExtra("number", numberi)
 
             startActivity(intent)
         }

@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         emaili = intent.getStringExtra("email") ?: ""
-        numberi = intent.getStringExtra("phone") ?: ""
+        numberi = intent.getStringExtra("number") ?: ""
         setContentView(R.layout.activity_second)
         namei = intent.getStringExtra("name") ?: ""
 
