@@ -49,7 +49,7 @@ class framento1 : Fragment() {
             val movieQualification = movieQualification.text.toString()
 
             val newMovie = MovieModel(movieName, movieCategory, movieDescription, movieQualification)
-            val movieTest = MovieModel("Titanic", "Drama", "Romance entre dos pasajeros del titanic", "9.8")
+            val movieTest = MovieModel("El jardin secreto", "Drama", "UNa niña pequeña que quedo huerfana :p", "9.8")
 
             movies.add(newMovie)
 
