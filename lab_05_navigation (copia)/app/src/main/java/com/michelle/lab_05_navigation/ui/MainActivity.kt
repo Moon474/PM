@@ -1,4 +1,7 @@
-package com.michelle.lab_05_navigation
+package com.michelle.lab_05_navigation.ui
+
+import com.michelle.lab_05_navigation.R
+
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
