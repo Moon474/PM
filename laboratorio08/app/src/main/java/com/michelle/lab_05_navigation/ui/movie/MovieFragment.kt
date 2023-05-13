@@ -5,23 +5,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 
-import com.michelle.lab_05_navigation.R
 import com.michelle.lab_05_navigation.databinding.FragmentAddmovieBinding
 import com.michelle.lab_05_navigation.databinding.FragmentMovieDetailsBinding
+import com.michelle.lab_05_navigation.ui.movie.viewmodel.MovieViewModel
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Movie_details.newInstance] factory method to
+ * Use the [MovieFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Movie_details : Fragment() {
+class MovieFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
+    private val movieViewModel: MovieViewModel by activityViewModels{
+        MovieViewModel.Factory
+    }
 
-//???????
     private lateinit var binding: FragmentMovieDetailsBinding
 
 
@@ -36,4 +39,10 @@ class Movie_details : Fragment() {
         return binding.root
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.viewmodel = movieViewModel
+    }
 }

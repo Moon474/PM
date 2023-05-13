@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.michelle.lab_05_navigation.ui.movie.Movie_details"
+        android:name="com.michelle.lab_05_navigation.ui.movie.MovieFragment"
         android:label="fragment_movie_detail"
         tools:layout="@layout/fragment_movie_details" >
         <action

@@ -59,7 +59,7 @@
                             android:paddingVertical="@dimen/smallg">
 
                             <TextView
-android:id="@+id/name_text"
+android:id="@+id/nametextv"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/name"
@@ -67,7 +67,7 @@ android:id="@+id/name_text"
                                 android:textSize="@dimen/normal_text_size" />
 
                             <TextView
-                                android:id="@+id/qualif_text"
+                                android:id="@+id/qualifitext"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
 

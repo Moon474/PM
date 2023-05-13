@@ -28,14 +28,15 @@ import com.michelle.lab_05_navigation.ui.movie.viewmodel.MovieViewModel
 class   Main : Fragment() {
 
 
-
-    private lateinit var adapter: MovieRecyclerViewAdapter
-
-
-
     private val mviewModel: MovieViewModel by activityViewModels {
         MovieViewModel.Factory
     }
+
+    private lateinit var adapter: MovieRecyclerViewAdapter
+    private lateinit var binding: FragmentMainBinding
+
+
+
 
     private fun showSelectedItem(movie: MovieModel){
         mviewModel.setSelectedMovie(movie)
@@ -43,7 +44,6 @@ class   Main : Fragment() {
     }
 
     //here idk
-    private lateinit var binding: FragmentMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -59,7 +59,6 @@ class   Main : Fragment() {
         setRecyclerView(view)
 
         binding.addMovieB.setOnClickListener{
-            mviewModel.clearData()
             it.findNavController().navigate(R.id.action_atoAdd)
 
         }
@@ -76,7 +75,7 @@ class   Main : Fragment() {
     private fun setRecyclerView(view: View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
 
-        adapter= MovieRecyclerViewAdapter { selectedMovie->
+        adapter= MovieRecyclerViewAdapter { selectedMovie ->
             showSelectedItem(selectedMovie)
 
         }
