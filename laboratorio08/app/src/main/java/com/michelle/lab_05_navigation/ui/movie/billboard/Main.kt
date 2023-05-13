@@ -33,12 +33,12 @@ class   Main : Fragment() {
 
 
 
-    private val viewModel: MovieViewModel by activityViewModels {
+    private val mviewModel: MovieViewModel by activityViewModels {
         MovieViewModel.Factory
     }
 
     private fun showSelectedItem(movie: MovieModel){
-        viewModel.setSelectedMovie(movie)
+        mviewModel.setSelectedMovie(movie)
         findNavController().navigate(R.id.atobe)
     }
 
@@ -59,7 +59,7 @@ class   Main : Fragment() {
         setRecyclerView(view)
 
         binding.addMovieB.setOnClickListener{
-            viewModel.clearData()
+            mviewModel.clearData()
             it.findNavController().navigate(R.id.action_atoAdd)
 
         }
@@ -69,16 +69,14 @@ class   Main : Fragment() {
 
 
     private fun displayMovies(){
-        adapter.setData(viewModel.getMovies())
+        adapter.setData(mviewModel.getMovies())
         adapter.notifyDataSetChanged()
     }
 
     private fun setRecyclerView(view: View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
 
-        adapter= MovieRecyclerViewAdapter {
-
-            selectedMovie->
+        adapter= MovieRecyclerViewAdapter { selectedMovie->
             showSelectedItem(selectedMovie)
 
         }

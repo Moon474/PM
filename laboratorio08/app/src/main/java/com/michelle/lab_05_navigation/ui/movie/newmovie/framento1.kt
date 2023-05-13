@@ -25,6 +25,8 @@ class framento1 : Fragment() {
     private val movieViewModel: MovieViewModel by activityViewModels{
         MovieViewModel.Factory
     }
+
+    //?
 private lateinit var binding: FragmentAddmovieBinding
 
 

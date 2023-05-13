@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 
 import com.michelle.lab_05_navigation.R
 import com.michelle.lab_05_navigation.databinding.FragmentAddmovieBinding
+import com.michelle.lab_05_navigation.databinding.FragmentMovieDetailsBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -20,8 +21,8 @@ class Movie_details : Fragment() {
     private var param2: String? = null
 
 
-
-    private lateinit var binding: FragmentAddmovieBinding
+//???????
+    private lateinit var binding: FragmentMovieDetailsBinding
 
 
 
@@ -31,7 +32,7 @@ class Movie_details : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= FragmentAddmovieBinding.inflate(inflater, container, false)
+        binding= FragmentMovieDetailsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
