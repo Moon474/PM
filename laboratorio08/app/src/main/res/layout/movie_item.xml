@@ -47,7 +47,7 @@
                             android:layout_height="120dp"
                             android:layout_weight="2"
                             android:paddingLeft="@dimen/smallg"
-                            android:src="@drawable/star_wars" />
+                            android:src="@drawable/noimage" />
 
                         <LinearLayout
 
