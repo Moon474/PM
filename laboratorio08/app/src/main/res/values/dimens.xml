@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mg">17dp</dimen>
+    <dimen name="image_h">210dp</dimen>
+    <dimen name="smaller_text">14sp</dimen>
+    <dimen name="normal_text_size">22dp</dimen>
+    <dimen name="smallg">9dp</dimen>
+    <dimen name="lg">30dp</dimen>
+
+    <dimen name="title">43dp</dimen>
+    <dimen name="image_w">355dp</dimen>
+
+    <dimen name="firstSice">30dp</dimen>
+    <dimen name="secondSize">225dp</dimen>
+    <dimen name="third">32dp</dimen>
+    <dimen name="fifth">32dp</dimen>
+    <dimen name="sixth">313dp</dimen>
+    <dimen name="border">401dp</dimen>
+    <dimen name="ButtonWidth">110dp</dimen>
+    <dimen name="ButtonHeight">60dp</dimen>
+    <dimen name="marginTop">489dp</dimen>
+    <dimen name="marginEnd">100dp</dimen>
+    <dimen name="tmargintop">150dp</dimen>
+    <dimen name="tmarginend">32dp</dimen>
+    <dimen name="textSize">20dp</dimen>
+    <dimen name="secondtextsize">16dp</dimen>>
+
+</resources>
