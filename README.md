@@ -1,4 +1,4 @@
-# PM-00381721
+# PM
 PROGRAMACION DE DISPOSITIVOS MOVILES
 5. To do:
  1. En la pantalla de la segunda actividad hay un botón para compartir
