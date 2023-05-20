@@ -77,6 +77,6 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
         name.value = movie.name
         category.value = movie.category
         description.value = movie.description
-        qualification.value = movie.calification
+        qualification.value = movie.qualification
     }
 }

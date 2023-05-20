@@ -4,14 +4,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.michelle.lab_05_navigation.data.models.MovieModel
 import com.michelle.lab_05_navigation.databinding.MovieItemBinding
 
+
 class MovieRecyclerViewHolder(private val binding: MovieItemBinding): RecyclerView.ViewHolder(binding.root) {
-    fun bind(movie: MovieModel, clickListener: (MovieModel)  -> Unit) {
-        binding.nametextv.text = movie.name
-        binding.qualifitext.text = movie.calification
+    fun bind(movie: MovieModel, clickListener: (MovieModel) -> Unit) {
+        binding.titleTextView.text = movie.name
+        binding.qualificationTextView.text = movie.qualification
 
-        binding.CardView.setOnClickListener {
+        binding.movieItemCardView.setOnClickListener {
             clickListener(movie)
-
         }
     }
 }
+

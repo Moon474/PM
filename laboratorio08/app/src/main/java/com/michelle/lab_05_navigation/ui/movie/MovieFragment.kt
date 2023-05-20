@@ -17,9 +17,7 @@ import com.michelle.lab_05_navigation.ui.movie.viewmodel.MovieViewModel
  * create an instance of this fragment.
  */
 class MovieFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
 
     private val movieViewModel: MovieViewModel by activityViewModels{
         MovieViewModel.Factory
@@ -29,6 +27,10 @@ class MovieFragment : Fragment() {
 
 
 
+
+    private fun setViewModel() {
+        binding.viewmodel = movieViewModel
+    }
 
 
     override fun onCreateView(

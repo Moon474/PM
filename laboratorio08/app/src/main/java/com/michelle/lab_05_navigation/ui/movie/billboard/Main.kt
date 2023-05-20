@@ -35,16 +35,6 @@ class   Main : Fragment() {
     private lateinit var adapter: MovieRecyclerViewAdapter
     private lateinit var binding: FragmentMainBinding
 
-
-
-
-    private fun showSelectedItem(movie: MovieModel){
-        mviewModel.setSelectedMovie(movie)
-        findNavController().navigate(R.id.atobe)
-    }
-
-    //here idk
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,6 +42,7 @@ class   Main : Fragment() {
         binding = FragmentMainBinding.inflate(inflater,container,false)
         return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -65,6 +56,15 @@ class   Main : Fragment() {
 
 
     }
+
+    private fun showSelectedItem(movie: MovieModel){
+        mviewModel.setSelectedMovie(movie)
+        findNavController().navigate(R.id.atobe)
+    }
+
+    //here idk
+
+
 
 
     private fun displayMovies(){

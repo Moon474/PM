@@ -1,92 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="wrap_content">
 
-        <ScrollView
+        <androidx.cardview.widget.CardView
+            android:id="@+id/movie_item_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/mg"
-            android:layout_marginEnd="@dimen/mg"
+            android:layout_margin="@dimen/mediumGap"
+            android:backgroundTint="@color/cardLayout"
+            app:cardCornerRadius="@dimen/smallGap"
+            app:cardMaxElevation="@dimen/mediumGap"
             app:layout_constraintEnd_toEndOf="parent"
-
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/CardView"
-                    android:layout_width="match_parent"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/LargeGap"
+                    android:layout_height="@dimen/LargeGap"
+                    android:layout_margin="@dimen/smallGap"
+                    android:src="@drawable/noimage"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/smallGap">
 
-                    app:cardBackgroundColor="@color/cardLayout"
-
-                    app:cardCornerRadius="7dp">
-
-                    <LinearLayout
-
-                        android:layout_width="match_parent"
-
+                    <TextView
+                        android:id="@+id/title_text_view"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal">
+                        android:layout_marginTop="@dimen/mediumGap"
+                        android:layout_marginEnd="@dimen/mediumGap"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/starWarsText"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mediumLargeTextGap" />
 
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="120dp"
-                            android:layout_weight="2"
-                            android:paddingLeft="@dimen/smallg"
-                            android:src="@drawable/noimage" />
-
-                        <LinearLayout
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="@dimen/mg"
-                            android:paddingVertical="@dimen/smallg">
-
-                            <TextView
-android:id="@+id/nametextv"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/name"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/normal_text_size" />
-
-                            <TextView
-                                android:id="@+id/qualifitext"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-
-                                android:background="@color/cardLayout"
-                                android:text="@string/qualif"
-
-                                android:textColor="@color/calification"
-                                android:textSize="@dimen/normal_text_size"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
+                    <TextView
+                        android:id="@+id/qualification_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="@string/starWarsCalification"
+                        android:textColor="@color/calification"
+                        android:textSize="@dimen/largeTextGap"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
-
-        </ScrollView>
-
-
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>
