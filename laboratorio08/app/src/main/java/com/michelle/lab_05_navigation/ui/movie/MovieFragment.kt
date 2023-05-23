@@ -18,33 +18,28 @@ import com.michelle.lab_05_navigation.ui.movie.viewmodel.MovieViewModel
  */
 class MovieFragment : Fragment() {
 
-
-    private val movieViewModel: MovieViewModel by activityViewModels{
+    private val movieViewModel: MovieViewModel by activityViewModels {
         MovieViewModel.Factory
     }
 
-    private lateinit var binding: FragmentMovieDetailsBinding
+    private lateinit var binding:  FragmentMovieDetailsBinding
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding =  FragmentMovieDetailsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        setViewModel()
+    }
 
     private fun setViewModel() {
         binding.viewmodel = movieViewModel
     }
 
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding= FragmentMovieDetailsBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.viewmodel = movieViewModel
-    }
 }

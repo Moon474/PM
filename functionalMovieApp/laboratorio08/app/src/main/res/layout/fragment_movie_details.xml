@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.michelle.lab_05_navigation.ui.movie.viewmodel.MovieViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/movie_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLayout"
+        tools:context=".ui.movie.MovieFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="386dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/smallg"
+            android:src="@drawable/noimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="328dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:text="@={viewmodel.name}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="328dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:text="@={viewmodel.category}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.385"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="326dp"
+            android:layout_height="216dp"
+            android:layout_marginTop="16dp"
+            android:text="@={viewmodel.description}"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+
+            android:id="@+id/textView5"
+            android:layout_width="65dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:text="@={viewmodel.qualification}"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--app:srcCompat="@drawable/imagen"
+    android:src="@drawable/star_wars"
+    !-->
+</layout>

@@ -36,7 +36,7 @@ private lateinit var binding: FragmentAddmovieBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 binding= FragmentAddmovieBinding.inflate(inflater, container, false)
         return binding.root
     }

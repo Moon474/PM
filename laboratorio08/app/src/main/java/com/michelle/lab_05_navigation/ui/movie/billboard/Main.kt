@@ -15,6 +15,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.michelle.lab_05_navigation.R
 import com.michelle.lab_05_navigation.data.models.MovieModel
+
+//the dummydata thing
+import com.michelle.lab_05_navigation.data.models.movies
 import com.michelle.lab_05_navigation.databinding.FragmentAddmovieBinding
 import com.michelle.lab_05_navigation.databinding.FragmentMainBinding
 import com.michelle.lab_05_navigation.ui.movie.billboard.recyclerview.MovieRecyclerViewAdapter
@@ -56,22 +59,6 @@ class   Main : Fragment() {
 
 
     }
-
-    private fun showSelectedItem(movie: MovieModel){
-        mviewModel.setSelectedMovie(movie)
-        findNavController().navigate(R.id.atobe)
-    }
-
-    //here idk
-
-
-
-
-    private fun displayMovies(){
-        adapter.setData(mviewModel.getMovies())
-        adapter.notifyDataSetChanged()
-    }
-
     private fun setRecyclerView(view: View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
 
@@ -84,6 +71,23 @@ class   Main : Fragment() {
         displayMovies()
 
     }
+
+    private fun displayMovies(){
+        adapter.setData(mviewModel.getMovies().asReversed())
+        adapter.notifyItemInserted(0)
+    }
+
+    private fun showSelectedItem(movie: MovieModel){
+        mviewModel.setSelectedMovie(movie)
+        findNavController().navigate(R.id.atobe)
+    }
+
+    //here idk
+
+
+
+
+
 
 
 
